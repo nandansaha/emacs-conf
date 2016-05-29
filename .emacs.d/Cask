@@ -1,2 +1,6 @@
 (source melpa)
+
+(depends-on "magit")
+(depends-on "markdown-mode")
 (depends-on "pallet")
+(depends-on "rust-mode")
