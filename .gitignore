@@ -1,0 +1,21 @@
+# -*- mode: gitignore; -*-
+# Based on https://github.com/github/gitignore/blob/master/Global/Emacs.gitignore
+
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# Org-mode
+.org-id-locations
+*_archive
+
+# cask packages
+.cask/
+dist/
+
+.DS_Store
