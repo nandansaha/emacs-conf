@@ -24,3 +24,32 @@
 (set-scroll-bar-mode 'nil)
 
 
+;; ido mode
+(setq ido-enable-flex-matching t)
+(setq ido-everywhere t)
+(ido-mode 1)
+(setq ido-create-new-buffer 'always) ; don't prompt if buffer doesn't exist
+
+;;;;;;;;;;;;;;;;;;
+;; key bindings ;;
+;;;;;;;;;;;;;;;;;;
+(global-set-key (kbd "M-o") 'other-window)
+
+;; smex https://github.com/nonsequitur/smex
+(global-set-key (kbd "M-x") 'smex)
+(global-set-key (kbd "M-X") 'smex-major-mode-commands)
+(global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
+
+;; markdown-mode customisation
+(setq markdown-command "/usr/local/bin/multimarkdown")
+
+;; from https://github.com/feoh/dotfiles/blob/master/home/.emacs.d/init.el
+;; Configure backups in a sane way
+(setq
+   backup-by-copying t      ; don't clobber symlinks
+   backup-directory-alist
+    '(("." . "~/.saves"))    ; don't litter my fs tree
+   delete-old-versions t
+   kept-new-versions 6
+   kept-old-versions 2
+   version-control t)       ; use versioned backups

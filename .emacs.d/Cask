@@ -1,6 +1,12 @@
 (source melpa)
 
+(depends-on "cargo")
+(depends-on "elfeed")
 (depends-on "magit")
 (depends-on "markdown-mode")
 (depends-on "pallet")
 (depends-on "rust-mode")
+(depends-on "rustfmt")
+(depends-on "smex")
+(depends-on "xkcd")
+(depends-on "yasnippet")
