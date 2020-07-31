@@ -1,15 +1,15 @@
 ;; basic mac key bindings
+
+;; Added by Package.el.  This must come before configurations of
+;; installed packages.  Don't delete this line.  If you don't want it,
+;; just comment it out by adding a semicolon to the start of the line.
+;; You may delete these explanatory comments.
+(package-initialize)
+
 (setq mac-option-key-is-meta nil)
 (setq mac-command-key-is-meta t)
 (setq mac-command-modifier 'meta)
 (setq mac-option-modifier nil)
-
-;; package management using cask and pallet
-;; see http://www.lambdacat.com/modern-emacs-package-management-with-cask-and-pallet/
-(require 'cask "/usr/local/share/emacs/site-lisp/cask/cask.el")
-(cask-initialize)
-(require 'pallet)
-(pallet-mode t)
 
 ;; basic config
 (setq inhibit-startup-message t)  ; disable startup message, go directly to *scratch*
@@ -35,11 +35,6 @@
 ;;;;;;;;;;;;;;;;;;
 (global-set-key (kbd "M-o") 'other-window)
 
-;; smex https://github.com/nonsequitur/smex
-(global-set-key (kbd "M-x") 'smex)
-(global-set-key (kbd "M-X") 'smex-major-mode-commands)
-(global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
-
 ;; markdown-mode customisation
 (setq markdown-command "/usr/local/bin/multimarkdown")
 
@@ -54,31 +49,30 @@
    kept-old-versions 2
    version-control t)       ; use versioned backups
 
-(setenv "GOPATH" "/Users/nandan/Dropbox/code/go/")
-;; exec-path-from-shell
-(when (memq window-system '(mac ns))
-  (exec-path-from-shell-initialize)
-  (exec-path-from-shell-copy-env "GOPATH")
-  )
+;;--------------------
+;; packaging related
+;;--------------------
+(require 'package)
+; add melpa
+(add-to-list 'package-archives
+             '("melpa" . "http://melpa.org/packages/") t)
 
-;;(add-hook 'before-save-hook 'gofmt-before-save)
+;; magit
+(global-set-key (kbd "C-x g") 'magit-status)
 
-(defun my-go-mode-hook ()
-  (if (not (string-match "go" compile-command))
-      (set (make-local-variable 'compile-command)
-           "go build -v && go test -v && go vet"))
-  ; Call Gofmt before saving                                                    
-  ;;  (add-hook 'before-save-hook 'gofmt-before-save)
-  ; Use goimports instead of go-fmt
-  (setq gofmt-command "goimports")
-  ; Go oracle
-  (load-file "$GOPATH/src/golang.org/x/tools/cmd/oracle/oracle.el")
-  ; Godef jump key binding                                                      
-  (local-set-key (kbd "M-.") 'godef-jump)
-  ; autocomplete 
-  (auto-complete-mode 1)
-  ;go-eldoc
-  (go-eldoc-setup)
-  )
-(add-hook 'go-mode-hook 'my-go-mode-hook)
-
+(set-default-font "Monaco 13")
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(ansi-color-names-vector
+   ["#212526" "#ff4b4b" "#b4fa70" "#fce94f" "#729fcf" "#e090d7" "#8cc4ff" "#eeeeec"])
+ '(custom-enabled-themes (quote (manoj-dark)))
+ '(package-selected-packages (quote (magit))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
