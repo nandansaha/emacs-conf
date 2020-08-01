@@ -1,0 +1,26 @@
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Length: 1161
+Content-Type: image/svg+xml
+Cache-Control: no-cache
+Content-Security-Policy: default-src 'none'; img-src data:; style-src 'unsafe-inline'
+Last-Modified: Sat, 01 Aug 2020 00:55:34 GMT
+Server: github-camo (62249a1c)
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-Xss-Protection: 1; mode=block
+X-GitHub-Request-Id: F0E4:3A9B:3203B:41085:5F24BE34
+Accept-Ranges: bytes
+Date: Sat, 01 Aug 2020 00:58:29 GMT
+Via: 1.1 varnish
+Age: 0
+X-Served-By: cache-sjc10075-SJC
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1596243509.730718,VS0,VE479
+Vary: Accept-Encoding
+X-Fastly-Request-ID: b9e24953e1d5017b41b2032169752a0d5b93e9a2
+Timing-Allow-Origin: https://github.com
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="134" height="20" role="img" aria-label="melpa: 20200725.725"><title>melpa: 20200725.725</title><linearGradient id="s" x2="0" y2="100%"><stop offset="0" stop-color="#bbb" stop-opacity=".1"/><stop offset="1" stop-opacity=".1"/></linearGradient><clipPath id="r"><rect width="134" height="20" rx="3" fill="#fff"/></clipPath><g clip-path="url(#r)"><rect width="43" height="20" fill="#555"/><rect x="43" width="91" height="20" fill="#922793"/><rect width="134" height="20" fill="url(#s)"/></g><g fill="#fff" text-anchor="middle" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" text-rendering="geometricPrecision" font-size="110"><text aria-hidden="true" x="225" y="150" fill="#010101" fill-opacity=".3" transform="scale(.1)" textLength="330">melpa</text><text x="225" y="140" transform="scale(.1)" fill="#fff" textLength="330">melpa</text><text aria-hidden="true" x="875" y="150" fill="#010101" fill-opacity=".3" transform="scale(.1)" textLength="810">20200725.725</text><text x="875" y="140" transform="scale(.1)" fill="#fff" textLength="810">20200725.725</text></g></svg>

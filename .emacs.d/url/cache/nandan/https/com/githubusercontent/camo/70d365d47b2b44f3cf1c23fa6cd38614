@@ -1,0 +1,26 @@
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Length: 1134
+Content-Type: image/svg+xml;charset=utf-8
+Cache-Control: max-age=86400, s-maxage=86400
+Content-Security-Policy: default-src 'none'; img-src data:; style-src 'unsafe-inline'
+Last-Modified: Fri, 31 Jul 2020 10:32:55 GMT
+Server: github-camo (62249a1c)
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-Xss-Protection: 1; mode=block
+X-GitHub-Request-Id: 32A4:624B:6F88:9BF8:5F24A994
+Accept-Ranges: bytes
+Date: Sat, 01 Aug 2020 00:58:28 GMT
+Via: 1.1 varnish
+Age: 5276
+X-Served-By: cache-sjc10059-SJC
+X-Cache: HIT
+X-Cache-Hits: 1
+X-Timer: S1596243509.731094,VS0,VE1
+Vary: Accept-Encoding
+X-Fastly-Request-ID: 3246ca82eff33331b2cf4b2e98744547aa0a23d4
+Timing-Allow-Origin: https://github.com
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="80" height="20" role="img" aria-label="license: gpl3"><title>license: gpl3</title><linearGradient id="s" x2="0" y2="100%"><stop offset="0" stop-color="#bbb" stop-opacity=".1"/><stop offset="1" stop-opacity=".1"/></linearGradient><clipPath id="r"><rect width="80" height="20" rx="3" fill="#fff"/></clipPath><g clip-path="url(#r)"><rect width="47" height="20" fill="#555"/><rect x="47" width="33" height="20" fill="#007ec6"/><rect width="80" height="20" fill="url(#s)"/></g><g fill="#fff" text-anchor="middle" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" text-rendering="geometricPrecision" font-size="110"><text aria-hidden="true" x="245" y="150" fill="#010101" fill-opacity=".3" transform="scale(.1)" textLength="370">license</text><text x="245" y="140" transform="scale(.1)" fill="#fff" textLength="370">license</text><text aria-hidden="true" x="625" y="150" fill="#010101" fill-opacity=".3" transform="scale(.1)" textLength="230">gpl3</text><text x="625" y="140" transform="scale(.1)" fill="#fff" textLength="230">gpl3</text></g></svg>
