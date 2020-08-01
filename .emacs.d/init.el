@@ -63,6 +63,7 @@
 ;; tramp
 (setq tramp-default-method "ssh")
 
+;; PATH
 (setenv "PATH" (concat (getenv "PATH") ":/usr/local/bin"))
 
 (set-default-font "Monaco 13")
