@@ -22,7 +22,7 @@
 (global-font-lock-mode t)
 (column-number-mode t)
 (set-scroll-bar-mode 'nil)
-
+(desktop-save-mode 1)
 
 ;; ido mode
 (setq ido-enable-flex-matching t)
@@ -36,6 +36,7 @@
 (global-set-key (kbd "M-o") 'other-window)
 
 ;; markdown-mode customisation
+; multimarkdown is installed via homebrew
 (setq markdown-command "/usr/local/bin/multimarkdown")
 
 ;; from https://github.com/feoh/dotfiles/blob/master/home/.emacs.d/init.el
@@ -65,6 +66,13 @@
 
 ;; PATH
 (setenv "PATH" (concat (getenv "PATH") ":/usr/local/bin"))
+
+;; imenu-list
+(setq imenu-list-position 'left)
+
+;; golang
+(setq gofmt-command "goimports")
+(add-hook 'before-save-hook 'gofmt-before-save)
 
 (set-default-font "Monaco 13")
 (custom-set-variables

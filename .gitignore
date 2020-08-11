@@ -3,8 +3,6 @@
 
 *~
 \#*\#
-/.emacs.desktop
-/.emacs.desktop.lock
 *.elc
 auto-save-list
 tramp
@@ -21,3 +19,11 @@ dist/
 .DS_Store
 
 ido.last
+
+# emacs desktop
+.emacs.d/.emacs.desktop
+.emacs.d/.emacs.desktop.lock
+
+# others
+.emacs.d/transient/
+.emacs.d/url/cookies
